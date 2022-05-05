@@ -37,7 +37,7 @@ app.get('/', (req, res) => {
 //new route
 app.post('/getmovie', (req, res) => {
 	const movieToSearch =
-		req.body.queryResult && req.body.queryResult.parameters && req.body.queryResult.parameters.movie
+		req.body.queryResult && req.body.queryResult.parameters && req.body.queryResult.parameters.movie-title
 			? req.body.queryResult.parameters.movie
 			: '';
 
